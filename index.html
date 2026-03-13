@@ -1,43 +1,173 @@
-<!DOCTYPE HTML>
-<html>
-  
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <title>
-        Redirect to WeboBook
-    </title>
-    <!-- meta tag to redirect to 
-     WeboBook after 0 seconds -->
-    <meta http-equiv="refresh"
-          content="0; 
-                url=https://webobook.com/public/65cbd68a8e967045b81d8242,en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuální prohlídka dočasně nedostupná</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b82f6; /* Hlavní modrá barva */
+            --primary-hover: #2563eb;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .error-container {
+            background-color: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background-color: #fee2e2; /* Jemně červené pozadí pro ikonu */
+            color: #ef4444; /* Červená ikona */
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+
+        .icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid #d1d5db;
+        }
+
+        .btn-outline:hover {
+            background-color: #f9fafb;
+        }
+
+        .contact-info {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responzivita pro mobilní zařízení */
+        @media (max-width: 480px) {
+            .error-container {
+                padding: 2rem 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .actions {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-  
 <body>
-    
-<div
-    class="div"> 
-
-<svg
-  class="ring"
-  viewBox="25 25 50 50"
-  stroke-width="5"
->
-  <circle cx="50" cy="50" r="20" />
-</svg>
-
-</div>
-
-<div
-    class="div2"> 
-
- <!-- Link to the destination page 
-      in case the refresh does not work -->
-    <p>You will be redirected to WeboBook in a moment. If you are not redirected automatically,</p> 
-    <a href="https://webobook.com/public/65cbd68a8e967045b81d8242,en"> click here</a>.
-
-</div>    
-    
+    <div class="error-container">
+        <div class="icon-wrapper">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path>
+            </svg>
+        </div>
+        
+        <h1>Omlouváme se, virtuální prohlídka je momentálně nedostupná</h1>
+        
+        <p>
+            Poskytovatel technologie, kterou jsme pro zobrazení naší virtuální prohlídky využívali, bohužel trvale ukončil svou činnost. 
+            V současné době intenzivně hledáme nové řešení, abychom vám mohli tento zážitek brzy znovu zprostředkovat.
+        </p>
+        
+        <div class="actions">
+            <a href="https://slovacka.cz/" class="btn">Zpět na stránky školy</a>
+            <a href="https://slovacka.cz/fotky-skoly" class="btn btn-outline">Prohlédnout fotky</a>
+        </div>
+        
+        <div class="contact-info">
+            Potřebujete se na něco zeptat nebo chcete vidět reálné fotografie prostor? <br>
+            Neváhejte nás <a href="https://slovacka.cz/kontakty">kontaktovat</a>. Rádi se vám budeme věnovat.
+        </div>
+    </div>
 </body>
-  
 </html>
